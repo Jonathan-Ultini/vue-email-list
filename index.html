@@ -20,7 +20,14 @@
   </header>
 
   <main>
-    <p>Questo è un semplice boilerplate per un progetto HTML, CSS e JavaScript.</p>
+
+    <div id="app">
+      <ul v-if="emails.length === 10">
+        <li v-for="(email, index) in emails" :key="index">{{ email }}</li>
+      </ul>
+      <p v-else>Loading emails...</p>
+    </div>
+
   </main>
 
   <footer>

@@ -1,7 +1,9 @@
-// Script di base per il progetto
+const { createApp } = Vue
 
-document.addEventListener('DOMContentLoaded', function () {
-  console.log('Il DOM è completamente caricato e analizzato');
-
-  // Aggiungi qui il tuo codice JavaScript
-});
+createApp({
+  data() {
+    return {
+      emails: []
+    };
+  },
+}).mount('#app');
